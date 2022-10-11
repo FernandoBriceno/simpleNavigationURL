@@ -27,6 +27,15 @@ class Contenido extends HTMLElement{
 customElements.define('contenido-component', Contenido);
 
 
+
+var numAleat =Math.floor(Math.random() * 10000);
+class ContenidoAleatorio extends HTMLElement{
+    constructor(){
+        super();
+        this.innerHTML= '<label hidden>ContenidoOculto'+numAleat+'</label>';
+    }
+}
+customElements.define('contenido-aleatorio', ContenidoAleatorio);
 /*
 addEventListener('load', (event) => {});
 
