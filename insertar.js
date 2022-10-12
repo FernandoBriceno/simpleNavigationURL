@@ -26,6 +26,14 @@ class Contenido extends HTMLElement{
 }
 customElements.define('contenido-component', Contenido);
 
+class menu extends HTMLElement{
+    constructor(){
+        super();
+        this.innerHTML= mostrarContenido('./views/components/menu.html');  ;
+    }
+}
+customElements.define('menu-component', menu);
+
 
 
 var numAleat =Math.floor(Math.random() * 10000);
